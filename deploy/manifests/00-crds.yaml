@@ -268,10 +268,44 @@ spec:
                                 TODO: Add other useful fields. apiVersion, kind, uid?'
                               type: string
                           required:
-                          - name
+                            - name
                           type: object
                       required:
-                      - tokenSecretRef
+                        - tokenSecretRef
+                      type: object
+                    sakuracloud:
+                      description: ACMEIssuerDNS01ProviderSakuraCloud is a structure
+                        containing the DNS configuration for SakuraCloud Zones
+                      properties:
+                        accessTokenSecretRef:
+                          properties:
+                            key:
+                              description: The key of the secret to select from. Must
+                                be a valid secret key.
+                              type: string
+                            name:
+                              description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                                TODO: Add other useful fields. apiVersion, kind, uid?'
+                              type: string
+                          required:
+                          - name
+                          type: object
+                        accessSecretSecretRef:
+                          properties:
+                            key:
+                              description: The key of the secret to select from. Must
+                                be a valid secret key.
+                              type: string
+                            name:
+                              description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                                TODO: Add other useful fields. apiVersion, kind, uid?'
+                              type: string
+                          required:
+                            - name
+                          type: object
+                      required:
+                      - accessTokenSecretRef
+                      - accessSecretSecretRef
                       type: object
                     rfc2136:
                       description: ACMEIssuerDNS01ProviderRFC2136 is a structure containing
@@ -2270,10 +2304,49 @@ spec:
                                       uid?'
                                     type: string
                                 required:
+                                  - name
+                                type: object
+                            required:
+                              - tokenSecretRef
+                            type: object
+                          sakuracloud:
+                            description: ACMEIssuerDNS01ProviderSakuraCloud is a
+                              structure containing the DNS configuration for SakuraCloud
+                              Domains
+                            properties:
+                              accessTokenSecretRef:
+                                properties:
+                                  key:
+                                    description: The key of the secret to select from.
+                                      Must be a valid secret key.
+                                    type: string
+                                  name:
+                                    description: 'Name of the referent. More info:
+                                      https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                                      TODO: Add other useful fields. apiVersion, kind,
+                                      uid?'
+                                    type: string
+                                required:
+                                  - name
+                                type: object
+                              accessSecretSecretRef:
+                                properties:
+                                  key:
+                                    description: The key of the secret to select from.
+                                      Must be a valid secret key.
+                                    type: string
+                                  name:
+                                    description: 'Name of the referent. More info:
+                                      https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                                      TODO: Add other useful fields. apiVersion, kind,
+                                      uid?'
+                                    type: string
+                                required:
                                 - name
                                 type: object
                             required:
-                            - tokenSecretRef
+                            - accessTokenSecretRef
+                            - accessSecretSecretRef
                             type: object
                           rfc2136:
                             description: ACMEIssuerDNS01ProviderRFC2136 is a structure
@@ -3930,10 +4003,49 @@ spec:
                                       uid?'
                                     type: string
                                 required:
+                                  - name
+                                type: object
+                            required:
+                              - tokenSecretRef
+                            type: object
+                          sakuracloud:
+                            description: ACMEIssuerDNS01ProviderSakuraCloud is a
+                              structure containing the DNS configuration for SakuraCloud
+                              Domains
+                            properties:
+                              accessTokenSecretRef:
+                                properties:
+                                  key:
+                                    description: The key of the secret to select from.
+                                      Must be a valid secret key.
+                                    type: string
+                                  name:
+                                    description: 'Name of the referent. More info:
+                                      https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                                      TODO: Add other useful fields. apiVersion, kind,
+                                      uid?'
+                                    type: string
+                                required:
+                                  - name
+                                type: object
+                              accessSecretSecretRef:
+                                properties:
+                                  key:
+                                    description: The key of the secret to select from.
+                                      Must be a valid secret key.
+                                    type: string
+                                  name:
+                                    description: 'Name of the referent. More info:
+                                      https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+                                      TODO: Add other useful fields. apiVersion, kind,
+                                      uid?'
+                                    type: string
+                                required:
                                 - name
                                 type: object
                             required:
-                            - tokenSecretRef
+                            - accessTokenSecretRef
+                            - accessSecretSecretRef
                             type: object
                           rfc2136:
                             description: ACMEIssuerDNS01ProviderRFC2136 is a structure

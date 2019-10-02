@@ -117,4 +117,5 @@ and provider specific notes regarding their usage.
    google
    route53
    digitalocean
+   sakuracloud
    rfc2136

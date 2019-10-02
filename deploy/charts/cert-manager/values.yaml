@@ -30,7 +30,7 @@ strategy: {}
 
 
 image:
-  repository: quay.io/jetstack/cert-manager-controller
+  repository: sacloud/cert-manager-controller
   # Override the image tag to deploy by setting this variable.
   # If no value is set, the chart's appVersion will be used.
   # tag: canary
@@ -129,7 +129,7 @@ webhook:
   nodeSelector: {}
 
   image:
-    repository: quay.io/jetstack/cert-manager-webhook
+    repository: sacloud/cert-manager-webhook
     # Override the image tag to deploy by setting this variable.
     # If no value is set, the chart's appVersion will be used.
     # tag: canary
