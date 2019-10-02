@@ -1,3 +1,57 @@
+# sacloud/cert-manager
+
+このリポジトリは[jetstack/cert-manager](https://github.com/jetstack/cert-manager)のさくらのクラウド対応版フォークです。  
+
+さくらのクラウドDNSを利用してDNS-01での証明書発行機能を追加しています。
+
+### さくらのクラウドDNSを利用するIssuerの例
+
+```yaml
+# cert-manager: v0.11.0+
+apiVersion: cert-manager.io/v1alpha2
+kind: Issuer
+metadata:
+  name: example-issuer
+spec:
+  acme:
+    ...
+    solvers:
+    - dns01:
+        sakuracloud:
+          accessTokenSecretRef:
+            name: sakuracloud-dns
+            key: access-token
+          accessSecretSecretRef:
+            name: sakuracloud-dns
+            key: access-secret
+```
+
+## インストール
+
+TODO v0.11.0リリース以降に追記
+
+```console
+## 注: v0.11.0リリース以降でないと以下のコマンドは利用できません
+
+## IMPORTANT: you MUST install the cert-manager CRDs **before** installing the
+## cert-manager Helm chart
+$ kubectl apply \
+    -f https://raw.githubusercontent.com/sacloud/cert-manager/sacloud/v0.11.0/deploy/manifests/00-crds.yaml
+
+## IMPORTANT: if the cert-manager namespace **already exists**, you MUST ensure
+## it has an additional label on it in order for the deployment to succeed
+$ kubectl label namespace cert-manager cert-manager.io/disable-validation="true"
+
+## Add the sacloud Helm repository
+$ helm repo add sacloud https://sacloud.github.io/helm-charts/
+
+
+## Install the cert-manager helm chart
+$ helm install --name my-release --namespace cert-manager --version v0.11.0 sacloud/cert-manager
+```
+
+=== Original README.md
+
 <p align="center"><img src="./logo/logo.png" width="250x" /></p>
 <p align="center"><a href="https://prow.build-infra.jetstack.net/?job=ci-cert-manager-bazel">
 <!-- prow build badge, godoc, and go report card-->
