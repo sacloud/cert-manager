@@ -30,6 +30,7 @@ tasks/acme/configuring-dns01/akamai.rst tasks/issuers/setup-acme/dns01/akamai.rs
 tasks/acme/configuring-dns01/azuredns.rst tasks/issuers/setup-acme/dns01/azuredns.rst
 tasks/acme/configuring-dns01/cloudflare.rst tasks/issuers/setup-acme/dns01/cloudflare.rst
 tasks/acme/configuring-dns01/digitalocean.rst tasks/issuers/setup-acme/dns01/digitalocean.rst
+tasks/acme/configuring-dns01/sakuracloud.rst tasks/issuers/setup-acme/dns01/sakuracloud.rst
 tasks/acme/configuring-dns01/google.rst tasks/issuers/setup-acme/dns01/google.rst
 tasks/acme/configuring-dns01/rfc2136.rst tasks/issuers/setup-acme/dns01/rfc2136.rst
 tasks/acme/configuring-dns01/route53.rst tasks/issuers/setup-acme/dns01/route53.rst

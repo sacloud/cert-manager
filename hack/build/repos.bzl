@@ -346,6 +346,14 @@ def go_repositories():
         version = "v1.6.0",
     )
     go_repository(
+        name = "com_github_sacloud_libsacloud_v2",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "github.com/sacloud/libsacloud/v2",
+        sum = "h1:glBzHVNMj1H+xCphG9CPIKoTkoFUKvgNOKbOHxPi2BM=",
+        version = "v2.0.0-beta5.0.20190830062749-ac5d04d18bfd",
+    )
+    go_repository(
         name = "com_github_docker_docker",
         build_file_generation = "on",
         build_file_proto_mode = "disable",
@@ -863,8 +871,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "github.com/hashicorp/go-multierror",
-        sum = "h1:iVjPR7a6H0tWELX5NxNe7bYopibicUzc7uPribsnS6o=",
-        version = "v1.0.0",
+        sum = "h1:5Ng5F1cIPjTUA2LkeN7w4TDkbJVnlQBLtZiYZLN5lGQ=",
+        version = "v1.0.1-0.20190722213833-bdca7bb83f60",
     )
     go_repository(
         name = "com_github_hashicorp_go_plugin",
@@ -959,8 +967,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "github.com/imdario/mergo",
-        sum = "h1:xTNEAn+kxVO7dTZGu0CegyqKZmoWFI0rF8UxjlB2d28=",
-        version = "v0.3.6",
+        sum = "h1:uxQqQL55ZKzcFHz9ioOEn+1Vd4TVChSe634X1fiMu0U=",
+        version = "v0.3.8-0.20190722133502-4c317f2286be",
     )
     go_repository(
         name = "com_github_inconshreveable_mousetrap",
@@ -1947,8 +1955,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "golang.org/x/crypto",
-        sum = "h1:1wopBVtVdWnn03fZelqdXTqk7U7zPQCb+T4rbU9ZEoU=",
-        version = "v0.0.0-20190611184440-5c40567a22f8",
+        sum = "h1:HuIa8hRrWRSrqYzx1qI49NNxhdi2PrY7gxVSq1JjLDc=",
+        version = "v0.0.0-20190701094942-4def268fd1a4",
     )
     go_repository(
         name = "org_golang_x_exp",
@@ -2099,8 +2107,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "go.uber.org/atomic",
-        sum = "h1:2Oa65PReHzfn29GpvgsYwloV9AVFHPDk8tYxt2c2tr4=",
-        version = "v1.3.2",
+        sum = "h1:cxzIVoETapQEqDhQu3QfnvXAV4AlzcvUCxkVUFw3+EU=",
+        version = "v1.4.0",
     )
     go_repository(
         name = "org_uber_go_multierr",
@@ -2213,4 +2221,68 @@ def go_repositories():
         importpath = "github.com/Shopify/toxiproxy",
         sum = "h1:TKdv8HiTLgE5wdJuEML90aBgNWsokNbMijUGhmcoBJc=",
         version = "v2.1.4+incompatible",
+    )
+    go_repository(
+        name = "com_github_go_playground_locales",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "github.com/go-playground/locales",
+        sum = "h1:2FITxuFt/xuCNP1Acdhv62OzaCiviiE4kotfhkmOqEc=",
+        version = "v0.12.1",
+    )
+    go_repository(
+        name = "com_github_go_playground_universal_translator",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "github.com/go-playground/universal-translator",
+        sum = "h1:X++omBR/4cE2MNg91AoC3rmGrCjJ8eAeUP/K/EKx4DM=",
+        version = "v0.16.0",
+    )
+    go_repository(
+        name = "com_github_huandu_xstrings",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "github.com/huandu/xstrings",
+        sum = "h1:yPeWdRnmynF7p+lLYz0H2tthW9lqhMJrQV/U7yy4wX0=",
+        version = "v1.2.0",
+    )
+    go_repository(
+        name = "com_github_leodido_go_urn",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "github.com/leodido/go-urn",
+        sum = "h1:Sm1gr51B1kKyfD2BlRcLSiEkffoG96g6TPv6eRoEiB8=",
+        version = "v1.1.0",
+    )
+    go_repository(
+        name = "com_github_uber_go_atomic",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "github.com/uber-go/atomic",
+        sum = "h1:yOuPqEq4ovnhEjpHmfFwsqBXDYbQeT6Nb0bwD6XnD5o=",
+        version = "v1.4.0",
+    )
+    go_repository(
+        name = "in_gopkg_go_playground_assert_v1",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "gopkg.in/go-playground/assert.v1",
+        sum = "h1:xoYuJVE7KT85PYWrN730RguIQO0ePzVRfFMXadIrXTM=",
+        version = "v1.2.1",
+    )
+    go_repository(
+        name = "in_gopkg_go_playground_validator_v9",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "gopkg.in/go-playground/validator.v9",
+        sum = "h1:5ofssLNYgAA/inWn6rTZ4juWpRJUwEnXc1LG2IeXwgQ=",
+        version = "v9.29.0",
+    )
+    go_repository(
+        name = "org_uber_go_ratelimit",
+        build_file_generation = "on",
+        build_file_proto_mode = "disable",
+        importpath = "go.uber.org/ratelimit",
+        sum = "h1:d9qaMM+ODpCq+9We41//fu/sHsTnXcrqd1en3x+GKy4=",
+        version = "v0.0.0-20180316092928-c15da0234277",
     )
