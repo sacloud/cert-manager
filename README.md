@@ -50,6 +50,12 @@ $ helm repo add sacloud https://sacloud.github.io/helm-charts/
 $ helm install --name my-release --namespace cert-manager --version v0.11.0 sacloud/cert-manager
 ```
 
+## バージョニングについて
+
+オリジナルのcert-managerのリリースに対応したリリースタグを付与していきます。  
+例えば、オリジナルの`v0.11.0`に対応するリリースとして`sacloud/v0.11.0`というタグでリリースします。  
+オリジナルのタグに対し複数のリリースを行う場合、`sacloud/vN.N.N-patch.N`のように0から始まる連番(`-patch.N`)を付与していきます。
+
 === Original README.md
 
 <p align="center"><img src="./logo/logo.png" width="250x" /></p>
